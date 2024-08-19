@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+
+}
+
+body {
+  width: 100%;
+}
+
+/* header */
+#header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  background: #E6E8DE;
+  box-shadow: 0 5px 10px rgb(202, 201, 201);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.03 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#hero {
+  background: #5ED3D9;
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    color: rgb(6, 37, 96);
+    padding-bottom: 15px;
+    text-shadow: 3px 4px 2px rgb(228, 224, 224)
+  }
+}
+
+#hero .content {
+  width: 50%;
+}
+
+#hero p {
+  color: #2f3a03;
+
+}
+
+#hero button {
+  font-size: larger;
+  background-color: rgb(112, 8, 8);
+  align-items: center;
+  color: #ffffff;
+  box-shadow: #1a1a1a;
+  border-radius: 25px;
+  height: 50px;
+  margin-left: 120px;
+  width: 150px;
+  text-align: center;
+
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #4CAF50, 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#hero .content a {
+  color: #ffffff;
+}
+
+#hero .image {
+  text-align: center;
+  width: 40%;
+  shape-outside: 6px 0px 0px;
+
+}
+
+#feature .fe-box {
+  width: 200px;
+  height: 240px;
+  text-align: center;
+  padding: 0px;
+  box-shadow: 2px 2px 15px rgb(170, 170, 170);
+  border: 1px solid #838787;
+  border-radius: 10px;
+  /* margin: 15px ; */
+  align-items: center;
+}
+
+#feature .fe-box::hover::after {
+  box-shadow: rgba(228, 8, 8, 0.03);
+}
+
+/* .section-p1{
+    display: flex;
+    
+}
+
+.section-p1 div{
+    margin-left: 60px ;
+} */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fe-box {
+  width: 25%;
+  margin: 20px;
+}
+
+.fe-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #000000;
+  background-color: #fdddfd;
+}
+
+.fe-box1 h6 {
+  background-color: #871e1e;
+  color: #ffffff;
+}
+
+.fe-box2 h6 {
+  background-color: #1e8769;
+  color: #ffffff;
+}
+
+.fe-box3 h6 {
+  background-color: #26097e;
+  color: #ffffff;
+}
+
+.fe-box4 h6 {
+  background-color: #610f09;
+  color: #ffffff;
+}
+
+.fe-box5 h6 {
+  background-color: #630b5d;
+  color: #ffffff;
+}
+
+.fe-box6 h6 {
+  background-color: #023c3f;
+  color: #ffffff;
+}
+
+.fe-box7 h6 {
+  background-color: #34065a;
+  color: #ffffff;
+}
+
+.fe-box8 h6 {
+  background-color: #45c833;
+  color: #ffffff;
+}
+
+.fe-box9 h6 {
+  background-color: #ff012c;
+  color: #ffffff;
+}
+
+.fe-box10 h6 {
+  background-color: #1e8769;
+  color: #ffffff;
+}
+
+.fe-box11 h6 {
+  background-color: #4cd5df;
+  color: #ffffff;
+}
+
+
+
+.slider-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.prev,
+.next {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #871e1e;
+}
+
+button {
+  animation: slideup 0.3s ease-in-out;
+  transform: translateY(5px);
+}
+
+.shopnow:hover {
+
+  
+  /* Darken the background color on hover */
+  box-shadow: 0 8px 0 0 #10017e, 0 8px 16px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  /* Add a shadow on hover */
+
+  transform: translateY(-5px);
+  /* Move the button up by 5px on hover */
+
+}
+
+
+/* .shopnow {
+
+  box-shadow: 0 2px 0 0 #4CAF50, 0 2px 4px rgba(0, 0, 0, 0.1);
+
+} */
+.shopnow:hover {
+  /* outline: 2px solid #4CAF50; */
+  box-shadow: 0 6px 0 0px rgba(0, 0, 0, 0.1);
+}
+
+/* .shopnow {
+
+  border: 2px solid #4CAF50;
+
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+
+}
+ 
+
+.shopnow {
+
+  outline: 2px solid #4CAF50;
+
+  outline-offset: 2px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+} */
+ 
+
+
+.shopnow:hover {
+
+  animation: slideUp 0.3s ease-in-out;
+
+}
+
+
+@keyframes slideUp {
+
+  0% {
+
+    transform: translateY(0);
+
+  }
+
+  100% {
+
+    transform: translateY(-5px);
+
+  }
+
+}
+
+/* search bottun */
+font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border-radius: 50px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  margin-top: -5px;
+  width: 20%;
+  padding: 5px;
+  border-radius: 50px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
